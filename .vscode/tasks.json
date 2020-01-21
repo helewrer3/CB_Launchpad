@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "label": "build",
+    "command": "C:/MinGW/bin/g++.exe",
+    "type": "shell",
+    "isDefault": true,
+    "kind": "build",
+    "presentation": {
+        "reveal": "always",
+        "panel": "new"
+    },
+    "watch": true,
+    "args": ["-Wall", "-std=c++17", "-g", "-Ic:/MinGW/include", "*.cpp", "-lfreeglut", "-lglu32", "-lopengl32"],
+    "problemMatcher":"$gcc"
+}
+
+/*{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "c:/MinGW/bin/make.exe",
+            "args": [],
+            "problemMatcher": "$gcc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "c:/MinGW/bin/make.exe",
+            "args": [
+                "clean"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        //},
+        // {
+        //     "label": "run",
+        //     "type": "shell",
+        //     "command": "a.exe",
+        //     "args": [],
+        //     "presentation": {
+        //         "reveal": "always",
+        //         "panel": "new"
+        //     },
+        //     "problemMatcher": []
+        }
+    ]
+}*/
