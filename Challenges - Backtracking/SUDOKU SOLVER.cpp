@@ -52,3 +52,15 @@ bool solveSudoku(int arr[9][9], int i, int j){
 	arr[i][j] = 0;
 	return false;
 }
+
+
+int main(){
+	cin >> n;
+	int arr[9][9];
+	for(int row = 0; row < n; row++)
+		for(int col = 0; col < n; col++)
+			cin >> arr[row][col];
+	
+	solveSudoku(arr, 0, 0);
+	return 0;
+}
